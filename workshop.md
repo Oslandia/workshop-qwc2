@@ -23,3 +23,15 @@ Client 2** (a.k.a. QWC2).
 * Supports WMS, WFS and WMTS
 * Uses the same rendering engine as QGIS Desktop
 * Maps are created and designed with QGIS Desktop
+
+[QGIS Server Manual](https://docs.qgis.org/testing/en/docs/user_manual/working_with_ogc/server/index.html)
+
+### QGIS Web Client 2
+
+* A web client for QGIS Server
+* Successor to QWC, with modern technologies (OpenLayers 3, React, Redux)
+* Feature-rich
+* Not just an application, but also a framework
+* Flexible
+
+Note: we, at Oslandia, have decided to use, and contribute to, QWC2 for our clients.
