@@ -40,9 +40,13 @@ Note: we, at Oslandia, have decided to use, and contribute to, QWC2 for our clie
 
 ### This workshop
 
-This workshop uses [OSGeoLive](https://live.osgeo.org) version 12.0. OSGeoLive is based on
-[Lubuntu](https://lubuntu.net/) and it contains a collection of more than 50 pre-installed
-OSGeo-related applications and librairies. OSGeoLive also includes sample data which will
-be used for this workshop.
+For this workshop you need to have [VirtualBox](https://www.virtualbox.org/) installed. VirtualBox
+is used to run a Virtual Machine (VM) pre-installed with all the software necessary for the
+workshop.
+
+The workshop's VM is based [OSGeoLive](https://live.osgeo.org) version 12.0, itself based on
+[Lubuntu](https://lubuntu.net/). OSGeoLive contains a collection of more than 50 pre-installed
+OSGeo-related applications and librairies. OSGeoLive also includes sample data which will be used
+for this workshop.
 
 ![](img/osgeolive.png)
