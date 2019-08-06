@@ -36,7 +36,8 @@ Client 2** (a.k.a. QWC2).
 
 [QWC2 Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
 
-Note: we, at Oslandia, have decided to use, and contribute to, QWC2 for our clients.
+Note: we, at Oslandia, have decided to use, and contribute to, QWC2 for our clients. We've
+evaluated QWC2 as the simplest and most flexible web client for QGIS Server.
 
 ### This workshop
 
