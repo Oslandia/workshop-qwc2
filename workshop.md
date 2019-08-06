@@ -50,3 +50,8 @@ OSGeo-related applications and librairies. OSGeoLive also includes sample data w
 use for the workshop.
 
 ![](img/osgeolive.png)
+
+Note : many thanks to the OSGeoLive developers and maintainers! OSGeoLive has become a very
+precious resource.
+
+**Hands-on exercise 1**
