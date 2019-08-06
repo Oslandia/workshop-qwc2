@@ -54,7 +54,7 @@ use for the workshop.
 Note : many thanks to the OSGeoLive developers and maintainers! OSGeoLive has become a very
 precious resource.
 
-**Hands-on exercise 1**
+**Hands-on exercise 1 : start the VM**
 
 First, extract the `workshop-qwc2.ova` file from the `workshop-qwc2.ova.7z.00*` 7z volume files. On
 Linux this can be done using the `7z` command as follows:
@@ -69,7 +69,8 @@ Optionally you can now check that the resulting `workshop-qwc2.ova` file is not 
 $ md5sum -c workshop-qwc2.ova.md5
 ```
 
-Launch the VirtualBox user interface and import the virtual appliance `workshop-qwc2.ova`. In the
-"Appliance settings" window make sure you give enough RAM to the VM.
+Now launch the VirtualBox user interface and import the virtual appliance `workshop-qwc2.ova`. In
+the "Appliance settings" window make sure you give enough RAM to the VM. 8196 MB should be enough.
+See the screenshot below.
 
 ![](img/virtualbox-appliance-settings.png)
