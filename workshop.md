@@ -64,12 +64,12 @@ Linux this can be done using the `7z` command as follows:
 $ 7z x workshop-qwc2.ova.7z.001
 ```
 
-Note: on Mac OS X you may want to check out [The
+Note: on macOS you may want to check out [The
 Unarchiver](https://apps.apple.com/app/the-unarchiver/id425424353?ls=1&mt=12) app, which is able to
 unarchive different kinds of archive files, including 7z files.
 
-Optionally you can now check that the resulting `workshop-qwc2.ova` file is not corrupted. On
-Linux you can do it like this:
+Optionally you can now check that the resulting `workshop-qwc2.ova` file is not corrupted. On Linux
+and macOS you can do it like this:
 
 ```shell
 $ md5sum -c workshop-qwc2.ova.md5
