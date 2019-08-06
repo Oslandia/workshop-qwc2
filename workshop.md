@@ -32,7 +32,7 @@ Client 2** (a.k.a. QWC2).
 * Successor to QWC, with modern technologies (OpenLayers 3, React, Redux)
 * Feature-rich
 * Not just an application, but also a framework
-* Flexible
+* Flexible!
 
 [QWC2 Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
 
