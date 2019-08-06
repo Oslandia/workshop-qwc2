@@ -34,4 +34,15 @@ Client 2** (a.k.a. QWC2).
 * Not just an application, but also a framework
 * Flexible
 
+[QWC2 Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
+
 Note: we, at Oslandia, have decided to use, and contribute to, QWC2 for our clients.
+
+### This workshop
+
+This workshop uses [OSGeoLive](https://live.osgeo.org) version 12.0. OSGeoLive is based on
+[Lubuntu](https://lubuntu.net/) and it contains a collection of more than 50 pre-installed
+OSGeo-related applications and librairies. OSGeoLive also includes sample data which will
+be used for this workshop.
+
+![](img/osgeolive.png)
