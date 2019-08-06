@@ -55,3 +55,21 @@ Note : many thanks to the OSGeoLive developers and maintainers! OSGeoLive has be
 precious resource.
 
 **Hands-on exercise 1**
+
+First, extract the `workshop-qwc2.ova` file from the `workshop-qwc2.ova.7z.00*` 7z volume files. On
+Linux this can be done using the `7z` command as follows:
+
+```shell
+$ 7z x workshop-qwc2.ova.7z.001
+```
+
+Optionally you can now check that the resulting `workshop-qwc2.ova` file is not corrupted:
+
+```shell
+$ md5sum -c workshop-qwc2.ova.md5
+```
+
+Launch the VirtualBox user interface and import the virtual appliance `workshop-qwc2.ova`. In the
+"Appliance settings" window make sure you give enough RAM to the VM.
+
+![](img/virtualbox-appliance-settings.png)
