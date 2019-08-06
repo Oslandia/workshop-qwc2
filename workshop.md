@@ -74,3 +74,20 @@ the "Appliance settings" window make sure you give enough RAM to the VM. 8196 MB
 See the screenshot below.
 
 ![](img/virtualbox-appliance-settings.png)
+
+With the appliance imported you are ready to start the virtual machine, so go for it!
+
+Note: do not worry (too much) if you get the following error window. This error hasn't caused
+any real problem so far.
+
+![](img/osgeolive-error-window.png)
+
+## Discover the QGIS project/map
+
+## Execute and test QGIS Server
+
+## Install and use the QWC2 demo app
+
+## Add a new map to the QWC2 app
+
+## Customize the QWC2 app
