@@ -110,6 +110,8 @@ displaying the map in QWC2.
 
 ## Execute and test QGIS Server
 
+### QGIS Server 2
+
 As already mentioned OSGeoLive version 12 comes with QGIS 2.18. And both QGIS Desktop and QGIS
 Server are installed.
 
@@ -151,6 +153,8 @@ http://localhost/cgi-bin/qgis_mapserv.fcgi?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_1
 You should get the following image:
 
 ![](img/qgis-server-218-getmap.png)
+
+### QGIS Server 3
 
 ## Install and use the QWC2 demo app
 
