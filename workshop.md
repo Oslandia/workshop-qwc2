@@ -101,14 +101,45 @@ stored as Shapefiles and TIF files in the `/home/user/data/natural_earth2` direc
 
 **Hands-on exercise 2: play with QGIS-NaturalEarth-Example QGIS project**
 
-Start QGIS and open the `/home/user/qgis-examples/QGIS-NaturalEarth-Example.qgs` project. Check
-that the map loads correctly and that all the layers display as expected.
+Start QGIS Desktop and open the `/home/user/qgis-examples/QGIS-NaturalEarth-Example.qgs` project.
+Check that the map loads correctly and that all the layers display as expected.
 
 Optionally you can change the styles of some layers, and save your changes. You can also change the
 map projection to EPSG:3857 if you feel like so. EPSG:3857 is the projection we will use when
 displaying the map in QWC2.
 
 ## Execute and test QGIS Server
+
+As already mentioned OSGeoLive version 12 comes with QGIS 2.18. And both QGIS Desktop and QGIS
+Server are installed.
+
+QGIS Server 2.18 is managed by Apache and its `mod_fcgid` module. The communication between Apache
+and QGIS Server 2.18 uses the FastCGI protocol.
+
+Apache is configured to make QGIS Server 2.18 available at
+`http://localhost/cgi-bin/qgis_mapserv.fcgi`.
+
+**Hands-on exercise 3: issue WMS requests to QGIS Server**
+
+Open `http://localhost/cgi-bin/qgis_mapserv.fcgi` in a browser window. You will get an error message
+indicating that the Service is unknown or unsupported. This is because no service is specified in
+the URL.
+
+Open `http://localhost/cgi-bin/qgis_mapserver.fcgi&SERVICE=WMS`. You will now get an error
+indicating that Operation is not supported. This is because no request is specified in the URL.
+
+Now open `http://localhost/cgi-bin/qgis_mapserv.fcgi?SERVICE=WMS&REQUEST=GetCapabilities`. This
+time you should get an XML document representing the capabilities of the WMS service. By default
+the `QGIS-Itasca-Example.qgs` project is picked up. To specify the QGIS project to use the `MAP`
+parameter can be used.
+
+Open
+`http://localhost/cgi-bin/qgis_mapserv.fcgi?SERVICE=WMS&REQUEST=GetCapabilities&MAP=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgs`
+to view the WMS capabilities for the QGIS-NaturalEarth-Example project.
+
+Note: `/usr/local/share/qgis` is used instead of `/home/user/qgis_examples` for the MAP parameter
+value because QGIS Server doesn't follow symbolic links, and `/home/user/qgis_examples` is
+a symbolic link to `/usr/local/share/qgis`.
 
 ## Install and use the QWC2 demo app
 
