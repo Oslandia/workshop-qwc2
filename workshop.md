@@ -223,8 +223,8 @@ http://localhost:8080/qgis?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_c
 
 It should yield the same image as previously (with QGIS Server 2).
 
-At this point we know that QGIS Server 3 is working correctly and ready to serve maps to QWC2! So
-let's move on...
+At this point we know that QGIS Server 3 is working correctly and is ready to serve maps to QWC2!
+Let's move on...
 
 ## Install and use the QWC2 demo app
 
