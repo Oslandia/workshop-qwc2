@@ -200,8 +200,31 @@ This is the last line you should see on the console:
 qgis-exec_1  | 14:13:32 INFO Server[25]: No server python plugins are available
 ```
 
-Do not worry about the Python error above this message. It's related to the Python plugin
-support that's missing in this version.
+Do not worry about the Python error above this message. It's related to the Python plugin support
+that's missing in this version.
+
+QGIS Server should now be available at http://localhost:8080/qgis.
+
+Note: you can do `Ctrl+C` in the console where you've executed `docker-compose up` to stop the
+`qgis-exec` and `nginx` containers. And you can do `docker-compose up` again to start them again.
+
+**Hands-on exercise 5: issues WMS requests to QGIS Server**
+
+In this exercise you will repeat the requests of exercise 3.
+
+Note: you don't need to have the `MAP` parameter in the requests here, as the QGIS project is preset
+through the `QGIS_PROJECT_FILE` environment variable in the `docker-compose.yml` file.
+
+For the impatients this the final WMS GetMap request:
+
+```
+http://localhost:8080/qgis?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_centerlines&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&FORMAT=image/jpeg&SRS=EPSG%3A3857&BBOX=-2503464,2763262,8348470,9170832&WIDTH=1024&HEIGHT=605
+```
+
+It should yield the same image as previously (with QGIS Server 2).
+
+At this point we know that QGIS Server 3 is working correctly and ready to serve maps to QWC2! So
+let's move on...
 
 ## Install and use the QWC2 demo app
 
