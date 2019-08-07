@@ -55,7 +55,7 @@ use for the workshop.
 Note : many thanks to the OSGeoLive developers and maintainers! OSGeoLive has become a very
 precious resource.
 
-**Hands-on exercise 1 : start the VM**
+**Hands-on exercise 1: start the VM**
 
 First, extract the `workshop-qwc2.ova` file from the `workshop-qwc2.ova.7z.00*` 7z volume files. On
 Linux this can be done using the `7z` command as follows:
@@ -89,7 +89,24 @@ any real problem so far.
 
 ![](img/osgeolive-error-window.png)
 
-## Discover the QGIS project/map
+## Discover the QGIS-Natural-Example project
+
+OSGeoLive version 12 includes QGIS 2.18. And it includes two QGIS projects:
+`QGIS-NaturalEarth-Example.qgs` and `QGIS-Itasca-Example.qgs`, both located in the
+`/home/user/qgis-examples` directory.
+
+We are going to use the `QGIS-NaturalEarth-Example.qgs` project for the workshop, which, as its name
+suggests, relies on [Natural Earth](https://www.naturalearthdata.com/) data. The Natural Earth data
+stored as Shapefiles and TIF files in the `/home/user/data/natural_earth2` directory.
+
+**Hands-on exercise 2: play with QGIS-NaturalEarth-Example QGIS project**
+
+Start QGIS and open the `/home/user/qgis-examples/QGIS-NaturalEarth-Example.qgs` project. Check
+that the map loads correctly and that all the layers display as expected.
+
+Optionally you can change the styles of some layers, and save your changes. You can also change the
+map projection to EPSG:3857 if you feel like so. EPSG:3857 is the projection we will use when
+displaying the map in QWC2.
 
 ## Execute and test QGIS Server
 
