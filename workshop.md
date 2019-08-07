@@ -177,9 +177,31 @@ The Docker images are there, but no container is running for the moment. Startin
 NGINX containers will be done with the next exercise.
 
 The QGIS Server Docker image (`qgis-exec`) was created using the
-[docker-qgis](https://github.com/Oslandia/docker-qgis) project by Oslandia. This project offers
-two Docker images: the `qgis-build` image for building QGIS Server, and the `qgis-exec` image
-for executing QGIS Server. We just use the latter in this workshop.
+[docker-qgis](https://github.com/Oslandia/docker-qgis) project by Oslandia. This project offers two
+Docker images: the `qgis-build` image for building QGIS Server, and the `qgis-exec` image for
+executing QGIS Server. We just use the latter in this workshop.
+
+**Hands-on exercise 4: run the QGIS Server 3 container**
+
+The `qgis-exec` and `nginx` Docker images are already installed, and the VM includes a [Docker
+Compose](https://docs.docker.com/compose/) file, so starting the containers is just a matter
+of running the `docker-compose up` command.
+
+Open a terminal and execute the following commands:
+
+```shell
+$ cd workshop-qwc2/docker-qgis/qgis-exec
+$ ./venv/bin/docker-compose up
+```
+
+This is the last line you should see on the console:
+
+```
+qgis-exec_1  | 14:13:32 INFO Server[25]: No server python plugins are available
+```
+
+Do not worry about the Python error above this message. It's related to the Python plugin
+support that's missing in this version.
 
 ## Install and use the QWC2 demo app
 
