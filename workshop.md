@@ -159,15 +159,7 @@ You should get the following image:
 QGIS 2.18 is rather old, and QGIS Server has been greatly improved (and fixed!) in QGIS 3. So we're
 going to use QGIS Server 3 in the rest of the workshop.
 
-The workshop VM has QGIS Server 3 pre-installed. It is installed as a Docker image. You can do
-`docker images` in a console to verify that the `qgis-exec` Docker image is present. You should
-also see the `nginx:1.13` image, which will be our web server for QGIS Server 3.
-
-The Docker images are there, but no container is running for the moment. Starting the QGIS and the
-NGINX containers will be done manually, through the `docker-compose up` command.
-
-Before moving on to the hands-on exercise let's quickly review the improvements brought by QGIS
-Server 3:
+Let's first review the improvements brought by QGIS Server 3:
 
 * Multi-thread rendering as in QGIS Desktop
 * WFS 1.1 support
@@ -176,6 +168,18 @@ Server 3:
 * OGC compliancy platform
 * More unit tests
 * And tons of fixes
+
+The workshop VM has QGIS Server 3 pre-installed. It is installed as a Docker image. You can do
+`docker images` in a console to verify that the `qgis-exec` Docker image is present. You should
+also see the `nginx:1.13` image, which will be our web server for QGIS Server 3.
+
+The Docker images are there, but no container is running for the moment. Starting the QGIS and the
+NGINX containers will be done with the next exercise.
+
+The QGIS Server Docker image (`qgis-exec`) was created using the
+[docker-qgis](https://github.com/Oslandia/docker-qgis) project by Oslandia. This project offers
+two Docker images: the `qgis-build` image for building QGIS Server, and the `qgis-exec` image
+for executing QGIS Server. We just use the latter in this workshop.
 
 ## Install and use the QWC2 demo app
 
