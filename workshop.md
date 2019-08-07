@@ -156,6 +156,12 @@ You should get the following image:
 
 ### QGIS Server 3
 
+QGIS 2.18 is rather old, and the QGIS Server implementation has been greatly improved (and fixed!)
+in QGIS 3. So we're going to use QGIS Server 3 in the rest of the workshop.
+
+The workshop VM has QGIS Server 3 installed already. It is installed as a Docker image. You can do
+`docker images` in a console to verify that the `qgis-exec` Docker image is present.
+
 ## Install and use the QWC2 demo app
 
 ## Add a new map to the QWC2 app
