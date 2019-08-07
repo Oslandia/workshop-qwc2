@@ -66,7 +66,7 @@ $ 7z x workshop-qwc2.ova.7z.001
 
 On macOS you can use [The
 Unarchiver](https://apps.apple.com/app/the-unarchiver/id425424353?ls=1&mt=12) app, which is
-available on App Store. On Windows [7-Zip](https://www.7-zip.org/) and
+available on App Store. On Windows, [7-Zip](https://www.7-zip.org/) and
 [WinRAR](https://www.win-rar.com/) are common tools to deal with 7z files.
 
 Optionally you can now check that the resulting `workshop-qwc2.ova` file is not corrupted. On Linux
