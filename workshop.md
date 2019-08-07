@@ -64,9 +64,10 @@ Linux this can be done using the `7z` command as follows:
 $ 7z x workshop-qwc2.ova.7z.001
 ```
 
-Note: on macOS you may want to check out [The
-Unarchiver](https://apps.apple.com/app/the-unarchiver/id425424353?ls=1&mt=12) app, which is able to
-unarchive different kinds of archive files, including 7z files.
+On macOS you can use [The
+Unarchiver](https://apps.apple.com/app/the-unarchiver/id425424353?ls=1&mt=12) app, which is
+available on App Store. On Windows [7-Zip](https://www.7-zip.org/) and
+[WinRAR](https://www.win-rar.com/) are common tools to deal with 7z files.
 
 Optionally you can now check that the resulting `workshop-qwc2.ova` file is not corrupted. On Linux
 you can do it like this:
