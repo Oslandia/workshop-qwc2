@@ -276,6 +276,17 @@ The `yarn start` command actually launches a development server for the applica
 context the application would be built, and the build artefacts would be served by a web server such
 as NGINX or Apache. More on that later in the workshop…
 
+Now is a good time to explore the QWC2 Demo App. Here are examples of things you can get more
+familiar with:
+
+* The Measure tools
+* The Print functionality
+* The Background Layer selector
+* The Theme selector (for displaying other maps)
+* The Layer manager
+* The Redlining tools
+* …
+
 ## Add a new map to the QWC2 app
 
 ## Customize the QWC2 app
