@@ -272,6 +272,10 @@ $ cd workshop-qwc2/qwc2-demo-app
 $ yarn start
 ```
 
+The `yarn start` command actually launches a development server for the application. In production
+context the application would be built, and the build artefacts would be served by a web server such
+as NGINX or Apache. More on that later in the workshop…
+
 ## Add a new map to the QWC2 app
 
 ## Customize the QWC2 app
