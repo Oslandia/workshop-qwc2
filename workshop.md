@@ -51,7 +51,7 @@ evaluated QWC2 as the simplest and most flexible web client for QGIS Server.
 ### This workshop
 
 For this workshop you need to have [VirtualBox](https://www.virtualbox.org/) installed. VirtualBox
-is used to run a Virtual Machine (VM) pre-installed with all the software necessary for the
+is used to run a Virtual Machine (VM) pre-installed with all the software necessary for this
 workshop.
 
 The workshop VM is based on [OSGeoLive](https://live.osgeo.org) version 12.0, itself based on
@@ -62,7 +62,7 @@ use for the workshop.
 ![](img/osgeolive.png)
 
 Note : many thanks to the OSGeoLive developers and maintainers! OSGeoLive has become a very
-precious resource.
+precious resource in the OSGeo/FOSS4G world.
 
 **Hands-on exercise 1: start the VM**
 
@@ -86,8 +86,8 @@ $ md5sum -c workshop-qwc2.ova.md5
 ```
 
 Now launch the VirtualBox user interface and import the virtual appliance `workshop-qwc2.ova`. In
-the "Appliance settings" window make sure you give enough RAM to the VM. 8196 MB should be enough.
-See the screenshot below.
+the "Appliance settings" window make sure you give enough RAM to the VM. 4096 MB should be enough,
+but the more RAM the butter. See the screenshot below.
 
 ![](img/virtualbox-appliance-settings.png)
 
@@ -104,9 +104,9 @@ OSGeoLive version 12 includes QGIS 2.18. And it includes two QGIS projects:
 `QGIS-NaturalEarth-Example.qgs` and `QGIS-Itasca-Example.qgs`, both located in the
 `/home/user/qgis-examples` directory.
 
-We are going to use the `QGIS-NaturalEarth-Example.qgs` project for the workshop, which, as its name
+We are going to use the `QGIS-NaturalEarth-Example.qgs` project in this workshop, which, as its name
 suggests, relies on [Natural Earth](https://www.naturalearthdata.com/) data. The Natural Earth data
-stored as Shapefiles and TIF files in the `/home/user/data/natural_earth2` directory.
+is stored as Shapefiles and TIF files in the `/home/user/data/natural_earth2` directory.
 
 **Hands-on exercise 2: play with QGIS-NaturalEarth-Example QGIS project**
 
@@ -132,7 +132,7 @@ Apache is configured to make QGIS Server 2.18 available at
 
 **Hands-on exercise 3: issue WMS requests to QGIS Server**
 
-Open `http://localhost/cgi-bin/qgis_mapserv.fcgi` in a browser window. You will get an error message
+Open http://localhost/cgi-bin/qgis_mapserv.fcgi in a browser window. You will get an error message
 indicating that the Service is unknown or unsupported. This is because no service is specified in
 the URL.
 
