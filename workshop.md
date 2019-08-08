@@ -41,6 +41,8 @@ that QGIS Server can handle. On that matter MapServer and QGIS Server work exact
 * Not just an application, but also a framework
 * Flexible!
 
+QWC2 can be seen as a User Inteface for displaying maps and map features served by QGIS Server.
+
 [QWC2 Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
 
 Note: we, at Oslandia, have decided to use, and contribute to, QWC2 for our clients. We've
