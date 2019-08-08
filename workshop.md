@@ -152,7 +152,8 @@ Note: `/usr/local/share/qgis` is used instead of `/home/user/qgis_examples` for 
 value because QGIS Server doesn't follow symbolic links, and `/home/user/qgis_examples` is
 a symbolic link to `/usr/local/share/qgis`.
 
-You are now execute a WMS GetMap request and make QGIS Server generate a map, as a JPEG image.  Open
+You are now execute a WMS GetMap request and make QGIS Server generate a map, as a JPEG image.
+Open<br>
 http://localhost/cgi-bin/qgis_mapserv.fcgi?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_centerlines&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&FORMAT=image/jpeg&SRS=EPSG%3A3857&BBOX=-2503464,2763262,8348470,9170832&WIDTH=1024&HEIGHT=605&MAP=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgs.
 
 You should get the following image:
@@ -220,6 +221,7 @@ Note: you don't need to have the `MAP` parameter in the requests here, as the QG
 through the `QGIS_PROJECT_FILE` environment variable in the `docker-compose.yml` file.
 
 For the impatients this the final WMS GetMap request:
+<br>
 http://localhost:8080/qgis?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_centerlines&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&FORMAT=image/jpeg&SRS=EPSG%3A3857&BBOX=-2503464,2763262,8348470,9170832&WIDTH=1024&HEIGHT=605.
 
 It should yield the same image as previously (with QGIS Server 2).
