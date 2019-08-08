@@ -228,7 +228,7 @@ It should yield the same image as previously (with QGIS Server 2).
 
 At this point we know that QGIS Server 3 is working correctly and is ready to serve maps to QWC2!
 
-**Hands-on exercise 6: create a map in QGIS Desktop**
+**Hands-on exercise 6: use QGIS Desktop as an OGC client (bonus)**
 
 Open QGIS Desktop again, add a WMS Connection pointing to our QGIS Server 3 instance
 (http://localhost:8080/qgis), and add a layer to the QGIS map from that WMS Connection.
