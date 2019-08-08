@@ -29,7 +29,7 @@ requests (WMS, WFS and WMTS).
 
 Also it is to be noted that QGIS Server doesn't know about the HTTP protocol, so it is required to
 run a web server, such as NGINX and Apache, to translate HTTP requests to CGI or FastCGI requests
-that QGIS Server can handle. MapServer and QGIS Server are identical on that matter.
+that QGIS Server can handle. On that matter MapServer and QGIS Server work exactly the same way.
 
 [QGIS Server Manual](https://docs.qgis.org/testing/en/docs/user_manual/working_with_ogc/server/index.html)
 
