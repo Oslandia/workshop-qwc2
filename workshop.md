@@ -189,14 +189,13 @@ executing QGIS Server. We just use the latter in this workshop.
 **Hands-on exercise 4: run the QGIS Server 3 container**
 
 The `qgis-exec` and `nginx` Docker images are already installed, and the VM includes a [Docker
-Compose](https://docs.docker.com/compose/) file, so starting the containers is just a matter
-of running the `docker-compose up` command.
+Compose](https://docs.docker.com/compose/) file that makes it easy to start the containers.
 
 Open a terminal and execute the following commands:
 
 ```shell
 $ cd workshop-qwc2/docker-qgis/qgis-exec
-$ ./venv/bin/docker-compose up
+$ ./venv/bin/docker-compose up  # start the nginx and qgis-exec containers
 ```
 
 This is the last line you should see on the console:
@@ -221,10 +220,7 @@ Note: you don't need to have the `MAP` parameter in the requests here, as the QG
 through the `QGIS_PROJECT_FILE` environment variable in the `docker-compose.yml` file.
 
 For the impatients this the final WMS GetMap request:
-
-```
-http://localhost:8080/qgis?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_centerlines&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&FORMAT=image/jpeg&SRS=EPSG%3A3857&BBOX=-2503464,2763262,8348470,9170832&WIDTH=1024&HEIGHT=605
-```
+http://localhost:8080/qgis?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_centerlines&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&FORMAT=image/jpeg&SRS=EPSG%3A3857&BBOX=-2503464,2763262,8348470,9170832&WIDTH=1024&HEIGHT=605.
 
 It should yield the same image as previously (with QGIS Server 2).
 
