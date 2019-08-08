@@ -245,10 +245,10 @@ learn about the features offered by QWC2.
 
 But what's "QWC2 Demo App" by the way?
 
-[QWC2](https://github.com/qgis/qwc2) is actually a collection of high-level JavaScript components
-built with [OpenLayers](https://openlayers.org) and [React](https://reactjs.org/). These components
-can then be assembled to form a complete web-mapping applications. So QWC2 is a library targeted to
-web developers rather than an application that you can just install.
+[QWC2](https://github.com/qgis/qwc2) is a collection of high-level JavaScript components built with
+[OpenLayers](https://openlayers.org) and [React](https://reactjs.org/). These components can then be
+assembled to form a complete web-mapping application. So QWC2 is a library targeted to web
+developers rather than an application that you can just install.
 
 And here comes with [QWC2 Demo App](https://github.com/qgis/qwc2-demo-app)! QWC2 Demo App is an
 application built using QWC2 components. QWC2 Demo App uses a lot of QWC2 components, to effectively
@@ -261,6 +261,16 @@ you're a developer you can even create and use your own React components.
 This is what it looks like by default:
 
 ![](img/qwc2-demo-app.png)
+
+**Hands-on exercise 7: start and use QWC2 Demo App**
+
+QWC2 is already installed in the workshop VM, under `/home/user/workshop-qwc2/qwc2-demo-app`. Open
+a new terminal, change to the `qwc2-demo-app` directory, and start the application:
+
+```shell
+$ cd workshop-qwc2/qwc2-demo-app
+$ yarn start
+```
 
 ## Add a new map to the QWC2 app
 
