@@ -136,10 +136,10 @@ Open http://localhost/cgi-bin/qgis_mapserv.fcgi in a browser window. You will ge
 indicating that the Service is unknown or unsupported. This is because no service is specified in
 the URL.
 
-Open `http://localhost/cgi-bin/qgis_mapserver.fcgi&SERVICE=WMS`. You will now get an error
+Open http://localhost/cgi-bin/qgis_mapserver.fcgi&SERVICE=WMS. You will now get an error
 indicating that Operation is not supported. This is because no request is specified in the URL.
 
-Now open `http://localhost/cgi-bin/qgis_mapserv.fcgi?SERVICE=WMS&REQUEST=GetCapabilities`. This
+Now open http://localhost/cgi-bin/qgis_mapserv.fcgi?SERVICE=WMS&REQUEST=GetCapabilities. This
 time you should get an XML document representing the capabilities of the WMS service. By default
 the `QGIS-Itasca-Example.qgs` project is picked up. To specify the QGIS project to use the `MAP`
 parameter can be used.
