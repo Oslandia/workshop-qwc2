@@ -238,7 +238,29 @@ OGC client to visualize them".
 
 ![](img/qgis-as-wms-client.png)
 
-## Install and use the QWC2 demo app
+## Discover the QWC2 Demo App
+
+In this section you're going to start the QWC2 Demo App, display it in your browser, and
+learn about the features offered by QWC2.
+
+But what's "QWC2 Demo App" by the way?
+
+[QWC2](https://github.com/qgis/qwc2) is actually a collection of high-level JavaScript components
+built with [OpenLayers](https://openlayers.org) and [React](https://reactjs.org/). These components
+can then be assembled to form a complete web-mapping applications. So QWC2 is a library targeted to
+web developers rather than an application that you can just install.
+
+And here comes with [QWC2 Demo App](https://github.com/qgis/qwc2-demo-app)! QWC2 Demo App is an
+application built using QWC2 components. QWC2 Demo App uses a lot of QWC2 components, to effectively
+demonstrate the capabilities of QWC2.
+
+QWC2 Demo App is also an application that you can configure and tailor to your needs. So it is often
+a good idea to start with QWC2 Demo App, and gradually customize it to meet your requirements. If
+you're a developer you can even create and use your own React components.
+
+This is what it looks like by default:
+
+![](img/qwc2-demo-app.png)
 
 ## Add a new map to the QWC2 app
 
