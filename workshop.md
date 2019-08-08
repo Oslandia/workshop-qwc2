@@ -145,19 +145,15 @@ the `QGIS-Itasca-Example.qgs` project is picked up. To specify the QGIS project
 parameter can be used.
 
 Open
-`http://localhost/cgi-bin/qgis_mapserv.fcgi?SERVICE=WMS&REQUEST=GetCapabilities&MAP=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgs`
+http://localhost/cgi-bin/qgis_mapserv.fcgi?SERVICE=WMS&REQUEST=GetCapabilities&MAP=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgs
 to view the WMS capabilities for the QGIS-NaturalEarth-Example project.
 
 Note: `/usr/local/share/qgis` is used instead of `/home/user/qgis_examples` for the MAP parameter
 value because QGIS Server doesn't follow symbolic links, and `/home/user/qgis_examples` is
 a symbolic link to `/usr/local/share/qgis`.
 
-You are now execute a WMS GetMap request and make QGIS Server generate a map, as a JPEG image.
-Open
-
-```
-http://localhost/cgi-bin/qgis_mapserv.fcgi?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_centerlines&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&FORMAT=image/jpeg&SRS=EPSG%3A3857&BBOX=-2503464,2763262,8348470,9170832&WIDTH=1024&HEIGHT=605&MAP=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgs
-```
+You are now execute a WMS GetMap request and make QGIS Server generate a map, as a JPEG image.  Open
+http://localhost/cgi-bin/qgis_mapserv.fcgi?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_centerlines&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&FORMAT=image/jpeg&SRS=EPSG%3A3857&BBOX=-2503464,2763262,8348470,9170832&WIDTH=1024&HEIGHT=605&MAP=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgs.
 
 You should get the following image:
 
