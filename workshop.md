@@ -24,6 +24,13 @@ Client 2** (a.k.a. QWC2).
 * Uses the same rendering engine as QGIS Desktop
 * Maps are created and designed with QGIS Desktop
 
+QGIS Server doesn't have a User Interface. QGIS Server is a program that can respond to WMS, WFS and
+WMTS requests.
+
+Also it is to be noted that QGIS Server doesn't know about the HTTP protocol, so it is required to
+run a web server, such as NGINX and Apache, to translate HTTP requests to CGI or FastCGI requests
+that QGIS Server can handle. MapServer and QGIS Server are identical on that matter.
+
 [QGIS Server Manual](https://docs.qgis.org/testing/en/docs/user_manual/working_with_ogc/server/index.html)
 
 ### QGIS Web Client 2
