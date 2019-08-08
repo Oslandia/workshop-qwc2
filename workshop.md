@@ -227,7 +227,16 @@ http://localhost:8080/qgis?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_c
 It should yield the same image as previously (with QGIS Server 2).
 
 At this point we know that QGIS Server 3 is working correctly and is ready to serve maps to QWC2!
-Let's move on...
+
+**Hands-on exercise 6: create a map in QGIS Desktop**
+
+Open QGIS Desktop again, add a WMS Connection pointing to our QGIS Server 3 instance
+(http://localhost:8080/qgis), and add a layer to the QGIS map from that WMS Connection.
+
+Also known as "create maps in QGIS Desktop, serve them with QGIS Server, and use QGIS Desktop as an
+OGC client to visualize them".
+
+![](img/qgis-as-wms-client.png)
 
 ## Install and use the QWC2 demo app
 
