@@ -290,3 +290,5 @@ familiar with:
 ## Add a new map to the QWC2 app
 
 ## Customize the QWC2 app
+
+## Build the QWC2 app for production
