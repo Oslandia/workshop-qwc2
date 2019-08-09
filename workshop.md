@@ -333,6 +333,10 @@ Here is a theme config that works:
 You can also do `git checkout exercise8` to get the final version of `themesConfig.json` without
 having to edit the `themesConfig.json` file by yourself.
 
+Anyway this is what you should eventually see in your browser window:
+
+![](img/qwc2-natural-earth.png)
+
 ## Customize the QWC2 app
 
 ## Build the QWC2 app for production
