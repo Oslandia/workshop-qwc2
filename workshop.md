@@ -298,6 +298,40 @@ each one corresponding to a different QGIS project served by a QGIS Server insta
 
 ![](img/qwc2-themes.png)
 
+**Hands-on exercise 8: add a theme for QGIS-NaturalEarth-Example**
+
+In this exercise you are going to add a new theme for the QGIS-NaturalEarth-Example project served
+by the QGIS Server 3 instance you just set up.
+
+Themes are configured in the `themesConfig.json` file at the root of the `qwc2-demo-app` directory.
+Edit `themesConfig.json` using the LeafPad or vim editor, and take some time going over the file to
+understand how themes are configured.
+
+Then add a theme for QGIS-NaturalEarth-Example. You can for example add it to the "Dev Tests" group.
+Or you can add the QGIS-NaturalEarth-Example theme, and remove all the other themes.
+
+Here is a theme config that works:
+
+```json
+{
+  "title": "QGIS Natural Earth",
+  "url": "http://localhost:8080/qgis",
+  "default": true,
+  "scales": [50000000, 25000000.0, 12500000.0, 6250000.0, 3125000.0, 1562500.0,
+             781250.0, 390625.0, 195312.5, 97656.25, 48828.125],
+  "extent": [-9546172, -884033, 12504796, 12051177],
+  "backgroundLayers": [
+    {
+      "name": "mapnik"
+    }
+  ],
+  "mapCrs": "EPSG:3857",
+  "searchProviders": ["coordinates"]
+}
+```
+
+You can also do `git checkout exercise8` to get the final version of `themesConfig.json` without
+having to edit the `themesConfig.json` file by yourself.
 
 ## Customize the QWC2 app
 
