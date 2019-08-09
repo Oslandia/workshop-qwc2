@@ -38,6 +38,7 @@ that QGIS Server can handle. On that matter MapServer and QGIS Server work exact
 * A web client for QGIS Server
 * Successor to QWC, with modern technologies (OpenLayers 3, React, Redux)
 * Feature-rich
+* Responsive
 * Not just an application, but also a framework
 * Flexible!
 
@@ -339,5 +340,13 @@ Anyway this is what you should eventually see in your browser window:
 ![](img/qwc2-natural-earth.png)
 
 ## Customize the QWC2 app
+
+TODO:
+
+- change logo
+- change theme thumbnail
+- remove features
+- change options in config.json
+- talk about external services
 
 ## Build the QWC2 app for production
