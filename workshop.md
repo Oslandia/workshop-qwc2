@@ -285,6 +285,7 @@ familiar with:
 * The Theme selector (for displaying other maps)
 * The Layer manager
 * The Redlining tools
+* The Identify functionality (map clicks)
 * …
 
 ## Add a new theme
