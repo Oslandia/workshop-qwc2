@@ -287,7 +287,17 @@ familiar with:
 * The Redlining tools
 * …
 
-## Add a new map to the QWC2 app
+## Add a new theme
+
+Themes are an important notion of QWC2. A theme is basically a collection of layers. When you switch
+themes you actually change the list of layers that can you can add/remove to/from the map through
+the "Layers & Legend" panel.
+
+A theme actually corresponds to a QGIS project. There are five themes in QWC2 Demo App by defaut,
+each one corresponding to a different QGIS project served by a QGIS Server instance.
+
+![](img/qwc2-themes.png)
+
 
 ## Customize the QWC2 app
 
