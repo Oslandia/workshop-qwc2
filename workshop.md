@@ -62,25 +62,18 @@ use for the workshop.
 
 ![](img/osgeolive.png)
 
-Note : many thanks to the OSGeoLive developers and maintainers! OSGeoLive has become a very
-precious resource in the OSGeo/FOSS4G world.
+Note: many thanks to the OSGeoLive developers and maintainers! OSGeoLive has become a very precious
+resource in the OSGeo/FOSS4G world.
+
+To create the workshop VM you need to import the virtual appliance `workshop-qwc2.ova` into
+VirtualBox. For that please proceed with the following hands-on exercise.
 
 **Hands-on exercise 1: start the VM**
 
-First, extract the `workshop-qwc2.ova` file from the `workshop-qwc2.ova.7z.00*` 7z volume files. On
-Linux this can be done using the `7z` command as follows:
+First, copy the `workshop-qwc2.ova` file to the file system of your local machine.
 
-```shell
-$ 7z x workshop-qwc2.ova.7z.001
-```
-
-On macOS you can use [The
-Unarchiver](https://apps.apple.com/app/the-unarchiver/id425424353?ls=1&mt=12) app, which is
-available on App Store. On Windows, [7-Zip](https://www.7-zip.org/) and
-[WinRAR](https://www.win-rar.com/) are common tools to deal with 7z files.
-
-Optionally you can now check that the resulting `workshop-qwc2.ova` file is not corrupted. On Linux
-you can do it like this:
+Then you can you can optionally verify that the `workshop-qwc2.ova` file hasn't been
+corrupted by checking its md5 sum. On Linux you can do it like this:
 
 ```shell
 $ md5sum -c workshop-qwc2.ova.md5
@@ -88,7 +81,7 @@ $ md5sum -c workshop-qwc2.ova.md5
 
 Now launch the VirtualBox user interface and import the virtual appliance `workshop-qwc2.ova`. In
 the "Appliance settings" window make sure you give enough RAM to the VM. 4096 MB should be enough,
-but the more RAM the butter. See the screenshot below.
+but the more RAM the better. See the screenshot below.
 
 ![](img/virtualbox-appliance-settings.png)
 
