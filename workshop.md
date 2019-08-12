@@ -256,7 +256,7 @@ This is what it looks like by default:
 
 ![](img/qwc2-demo-app.png)
 
-**Hands-on exercise 7: start and use QWC2 Demo App**
+**Hands-on exercise 7: start and explore QWC2 Demo App**
 
 QWC2 is already installed in the workshop VM, under `/home/user/workshop-qwc2/qwc2-demo-app`. Open
 a new terminal, change to the `qwc2-demo-app` directory, and start the application:
@@ -270,17 +270,16 @@ The `yarn start` command actually launches a development server for the applica
 context the application would be built, and the build artefacts would be served by a web server such
 as NGINX or Apache. More on that later in the workshop…
 
-Now is a good time to explore the QWC2 Demo App. Here are examples of things you can get more
-familiar with:
+Now is a good time to explore the QWC2 Demo App. Here are examples of things you can try out:
 
-* The Measure tools
-* The Print functionality
-* The Background Layer selector
-* The Theme selector (for displaying other maps)
-* The Layer manager
-* The Redlining tools
-* The Identify functionality (map clicks)
-* …
+1. Open the "Theme" panel and change from one theme to another
+1. Open the "Layers & Legend panel" and change the visibility of layers
+1. Open the "Theme" panel again and select the QGIS.org QGIS Server Demo theme
+1. Click on objects of the polygons layer to display information about the clicked objects
+1. Open the "Switch background" panel and select another background layer
+1. Enter "44.44,26.10" in the "Search places" field and select "26.1°E, 44.44°N"
+
+You can also play with the Measure and Redlining tools if you feel like so.
 
 ## Add a new theme
 
