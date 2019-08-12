@@ -349,7 +349,7 @@ information about rivers and lakes for example.
 ## Customize the QWC2 app
 
 With this section you are going to make a number of customizations to the QWC2 Demo App. Just
-simple customizations that don't require writing code.
+simple customizations that don't require writing any code.
 
 **Hands-on exercise 9: change the logo and the theme thumbnail**
 
@@ -366,6 +366,8 @@ to the `TopBar` config after the setting of the `"logoUrl"` property:
 ```
 
 Now reload the application in the browser. You should see the new logo.
+
+![](img/qwc2-new-logo.png)
 
 
 TODO:
