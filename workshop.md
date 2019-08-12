@@ -413,3 +413,30 @@ You can a lot more, as explained in the [QWC2 Demo App
 documentation](https://github.com/qgis/qwc2-demo-app/tree/master/doc).
 
 ## Build the QWC2 app for production
+
+Up to now we have relied on QWC2 Demo App's development server. Although necessary during
+development it is very slow, so you don't want to use it in production.
+
+In production what you want to do is *build* the application and use your production web
+server for serving the JS, CSS, and img files resulting from the build step.
+
+**Hands-on exercise 11: build the application**
+
+To build the application run the following yarn command:
+
+```shell
+$ yarn run prod
+```
+
+This command builds the application and stores the results under the `prod` directory. What's
+left to be done is copying the content of the `prod` directory to a web-accessible directory.
+
+In our case we're going to the NGINX we server, which is the web server we already use for
+QGIS Server 3. So let's copy the content of the `prod` directory to the NGINX directory:
+
+```
+cp -r prod/* ../docker-qgis/qgis-exec/html/
+```
+
+Now open http://localhost:8080 in your browser to load the production version of your QWC2
+application. Enjoy!
