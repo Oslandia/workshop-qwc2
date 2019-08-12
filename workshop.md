@@ -324,12 +324,27 @@ Here is a theme config that works:
 }
 ```
 
-You can also do `git checkout exercise8` to get the final version of `themesConfig.json` without
-having to edit the `themesConfig.json` file by yourself.
+For your changes to `themesConfig.json` to be taken into account the following `yarn` command should
+be run:
+
+```
+$ yarn run themesconfig
+```
+
+You can also stop the development server by doing `Ctrl+C` in the console where `yarn start` was
+executed, and execute `yarn start` to start the developement server again. But that will take a lot
+more time than just executing `yarn run themesconfig` and reloading the web application in the
+browser.
+
+Note that you can also do `git checkout exercise8` to get the final version of `themesConfig.json`
+without having to edit the `themesConfig.json` file by yourself.
 
 Anyway this is what you should eventually see in your browser window:
 
 ![](img/qwc2-natural-earth.png)
+
+You can now verify that the map behaves correctly, and that "map clicks" work for displaying
+information about rivers and lakes for example.
 
 ## Customize the QWC2 app
 
