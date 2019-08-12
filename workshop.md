@@ -387,11 +387,29 @@ to the Natural Earth theme config in `themesConfig.json`:
 And do not forget that changes to `themesConfig.json` require running the `yarn run themesconfig`
 command.
 
-TODO:
+Reload the application in the browser, and you should see the new theme thumbnail in the Theme
+panel.
 
-- change theme thumbnail
-- remove features
-- change options in config.json
-- talk about external services
+**Hands-on exercise 10: remove unneeded features**
+
+Let's assume that we don't want to have the "Share" and "External link" functionalities. They can be
+removed by deleting the corresponding configuration blocks from the `config.json` file.
+
+Edit the `config.json` file and remove the following lines:
+
+```json
+{"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$"}
+```
+
+```json
+{"key": "Share", "icon": "share", "identifyEnabled": true},
+```
+
+Note: when deleting the `ExternalLink` line do not forget to remove the trailing coma from
+the previous line. This is to keep the JSON file syntacticaly correct.
+
+This "Customize the QWC2 app" section has just touched the surface of QWC2 Demo App customization.
+You can a lot more, as explained in the [QWC2 Demo App
+documentation](https://github.com/qgis/qwc2-demo-app/tree/master/doc).
 
 ## Build the QWC2 app for production
