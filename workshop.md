@@ -369,6 +369,23 @@ Now reload the application in the browser. You should see the new logo.
 
 ![](img/qwc2-new-logo.png)
 
+You may have noticed that the thumbnail image for the QGIS Natural Earth theme used in the Theme
+panel is ugly. Let's change it by a specific image of our choice.
+
+Create a thumbnail image for the QGIS Natural Earth theme using the following GetMap request:
+
+http://localhost:8080/qgis?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=HYP_50M_SR_W&STYLES=&SRS=EPSG%3A3857&CRS=EPSG%3A3857&TILED=false&DPI=96&OPACITIES=255%2C255%2C255&WIDTH=200&HEIGHT=100&BBOX=-7414947.916666666%2C-132291.6666666679%2C10378281.249999998%2C11297708.333333332
+
+Save the image as `assets/img/mapthumbs/naturalearth.png`, and add `"thumbnail": "naturalearth.png"`
+to the Natural Earth theme config in `themesConfig.json`:
+
+```json
+         "searchProviders": ["coordinates"],
+         "thumbnail": "naturalearth.png"
+```
+
+And do not forget that changes to `themesConfig.json` require running the `yarn run themesconfig`
+command.
 
 TODO:
 
