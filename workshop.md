@@ -348,9 +348,28 @@ information about rivers and lakes for example.
 
 ## Customize the QWC2 app
 
+With this section you are going to make a number of customizations to the QWC2 Demo App. Just
+simple customizations that don't require writing code.
+
+**Hands-on exercise 9: change the logo and the theme thumbnail**
+
+Let's first change the logo located in the top-left corner of the application.
+
+Download the FOSS4G 2019 Bucharest logo from
+https://2019.foss4g.org/wp-content/uploads/2018/07/logo-site.png and save it as
+`assets/img/logo.png`. Now edit the `config.json` file and add `"logoFormat": "png"`
+to the `TopBar` config after the setting of the `"logoUrl"` property:
+
+```json
+             "logoUrl": "/",
+             "logoFormat": "png"
+```
+
+Now reload the application in the browser. You should see the new logo.
+
+
 TODO:
 
-- change logo
 - change theme thumbnail
 - remove features
 - change options in config.json
