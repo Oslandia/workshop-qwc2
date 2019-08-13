@@ -451,4 +451,13 @@ cp -r prod/* ../docker-qgis/qgis-exec/html/
 ```
 
 Now open http://localhost:8080 in your browser to load the production version of your QWC2
-application. Enjoy!
+application.
+
+## Bonus
+
+If you still have time feel free to go through the [QWC2
+documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md), and
+customize your QWC2 application even more.
+
+You may also be interested in making the "Show layer map tips" functionality work for the
+QGIS-NaturalEarth-Example theme. This requires enabling "map tips" in the QGIS project.
