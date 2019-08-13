@@ -2,6 +2,8 @@
 
 ![](img/foss4g-2019-bucharest.jpg)
 
+https://github.com/elemoine/workshop-qwc2/
+
 ## Éric Lemoine
 
 * Oslandia
@@ -320,7 +322,10 @@ Here is a theme config that works:
     }
   ],
   "mapCrs": "EPSG:3857",
-  "searchProviders": ["coordinates"]
+  "searchProviders": ["coordinates"],
+  "config": {
+    "preserveExtentOnThemeSwitch": false
+  }
 }
 ```
 
