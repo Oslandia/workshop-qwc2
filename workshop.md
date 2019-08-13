@@ -26,8 +26,8 @@ Client 2** (a.k.a. QWC2).
 * Uses the same rendering engine as QGIS Desktop
 * Maps are created and designed with QGIS Desktop
 
-QGIS Server doesn't have a User Interface (but it could be configured with QGIS Desktop). QGIS Server is a program that can respond to OGC
-requests (WMS, WFS and WMTS).
+QGIS Server is a program that can respond to OGC requests (WMS, WFS and WMTS). QGIS Server doesn't
+have a User Interface, but it works with QGIS projects created using QGIS Desktop.
 
 Also it is to be noted that QGIS Server doesn't know about the HTTP protocol, so it is required to
 run a web server, such as NGINX and Apache, to translate HTTP requests to CGI or FastCGI requests
@@ -45,6 +45,7 @@ that QGIS Server can handle. On that matter MapServer and QGIS Server work exact
 * Flexible!
 
 QWC2 can be seen as a User Interface for displaying maps and map features served by QGIS Server.
+QWC2 uses QGIS Server extensions, it is therefore specific to QGIS Server.
 
 [QWC2 Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
 
@@ -338,10 +339,14 @@ be run:
 $ yarn run themesconfig
 ```
 
-You can also stop the development server by doing `Ctrl+C` in the console where `yarn start` was
-executed, and execute `yarn start` to start the developement server again. But that will take a lot
-more time than just executing `yarn run themesconfig` and reloading the web application in the
-browser.
+This command parses the `themesConfig.json`, and for each theme issues a `GetProjectSettings`
+request using at the URL specified in the theme config. The results of the command are stored in
+a `themes.json` file, which will be fetched by the web application.
+
+Note: instead of executing `yarn run themesconfig` you can also stop the development server by doing
+`Ctrl+C` in the console where `yarn start` was executed, and execute `yarn start` to start the
+developement server again. But that will take a lot more time than just executing `yarn run
+themesconfig` and reloading the web application in the browser.
 
 Note that you can also do `git checkout exercise8` to get the final version of `themesConfig.json`
 without having to edit the `themesConfig.json` file by yourself.
