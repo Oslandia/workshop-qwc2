@@ -10,7 +10,7 @@ STEM=workshop-qwc2
 
 OVA=$(addsuffix .ova,$(STEM))
 7Z=$(addsuffix .7z,$(OVA))
-MD5=$(addsuffix .md5,$(OVA))
+MD5=$(addprefix tools/,$(addsuffix .md5,$(OVA)))
 7ZV1=$(addsuffix .001,$(7Z))
 
 .PHONY: all
