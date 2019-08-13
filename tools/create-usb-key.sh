@@ -6,7 +6,7 @@ DEV=/dev/sdb
 PART=${DEV}1
 MNTPT=/media/usb
 OVAFILE=workshop-qwc2.ova
-MD5FILE=${OVAFILE}.md5
+MD5FILE=tools/${OVAFILE}.md5
 
 while /bin/true; do
     read -p "create key? [yes|no] " yn
