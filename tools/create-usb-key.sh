@@ -7,6 +7,7 @@ PART=${DEV}1
 MNTPT=/media/usb
 OVAFILE=workshop-qwc2.ova
 MD5FILE=${OVAFILE}.md5
+VIRTUALBOX="VirtualBox-6.0.10-132072-Win.exe"
 
 while /bin/true; do
     read -p "create key? [yes|no] " yn
@@ -22,7 +23,7 @@ while /bin/true; do
         echo "mount device..."
         sudo mount $PART $MNTPT
         echo "copy files to device..."
-        time cp $OVAFILE tools/$MD5FILE $MNTPT/
+        time cp $OVAFILE tools/$MD5FILE $VIRTUALBOX $MNTPT/
         echo "check md5..."
         md5sum -c $MNTPT/$MD5FILE
         echo "unmount device..."
