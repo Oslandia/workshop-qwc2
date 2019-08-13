@@ -24,7 +24,7 @@ Client 2** (a.k.a. QWC2).
 * Uses the same rendering engine as QGIS Desktop
 * Maps are created and designed with QGIS Desktop
 
-QGIS Server doesn't have a User Interface. QGIS Server is a program that can respond to OGC
+QGIS Server doesn't have a User Interface (but it could be configured with QGIS Desktop). QGIS Server is a program that can respond to OGC
 requests (WMS, WFS and WMTS).
 
 Also it is to be noted that QGIS Server doesn't know about the HTTP protocol, so it is required to
@@ -42,7 +42,7 @@ that QGIS Server can handle. On that matter MapServer and QGIS Server work exact
 * Not just an application, but also a framework
 * Flexible!
 
-QWC2 can be seen as a User Inteface for displaying maps and map features served by QGIS Server.
+QWC2 can be seen as a User Interface for displaying maps and map features served by QGIS Server.
 
 [QWC2 Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
 
@@ -130,7 +130,7 @@ Open http://localhost/cgi-bin/qgis_mapserv.fcgi in a browser window. You will ge
 indicating that the Service is unknown or unsupported. This is because no service is specified in
 the URL.
 
-Open http://localhost/cgi-bin/qgis_mapserver.fcgi&SERVICE=WMS. You will now get an error
+Open http://localhost/cgi-bin/qgis_mapserv.fcgi?SERVICE=WMS. You will now get an error
 indicating that Operation is not supported. This is because no request is specified in the URL.
 
 Now open http://localhost/cgi-bin/qgis_mapserv.fcgi?SERVICE=WMS&REQUEST=GetCapabilities. This
@@ -146,7 +146,7 @@ Note: `/usr/local/share/qgis` is used instead of `/home/user/qgis_examples` for 
 value because QGIS Server doesn't follow symbolic links, and `/home/user/qgis_examples` is
 a symbolic link to `/usr/local/share/qgis`.
 
-You are now execute a WMS GetMap request and make QGIS Server generate a map, as a JPEG image.
+You can now execute a WMS GetMap request and make QGIS Server generate a map, as a JPEG image.
 Open<br>
 http://localhost/cgi-bin/qgis_mapserv.fcgi?LAYERS=HYP_50M_SR_W,ne_10m_lakes,ne_10m_rivers_lake_centerlines&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application/vnd.ogc.se_inimage&FORMAT=image/jpeg&SRS=EPSG%3A3857&BBOX=-2503464,2763262,8348470,9170832&WIDTH=1024&HEIGHT=605&MAP=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgs.
 
@@ -205,7 +205,7 @@ that's missing in this version.
 QGIS Server should now be available at http://localhost:8080/qgis.
 
 Note: you can do `Ctrl+C` in the console where you've executed `docker-compose up` to stop the
-`qgis-exec` and `nginx` containers. And you can do `docker-compose up` again to start them again.
+`qgis-exec` and `nginx` containers. And you can do `./venv/bin/docker-compose up` again to start them again.
 
 **Hands-on exercise 5: issues WMS requests to QGIS Server**
 
@@ -244,7 +244,7 @@ But what's "QWC2 Demo App" by the way?
 assembled to form a complete web-mapping application. So QWC2 is a library targeted to web
 developers rather than an application that you can just install.
 
-And here comes with [QWC2 Demo App](https://github.com/qgis/qwc2-demo-app)! QWC2 Demo App is an
+And here comes [QWC2 Demo App](https://github.com/qgis/qwc2-demo-app)! QWC2 Demo App is an
 application built using QWC2 components. QWC2 Demo App uses a lot of QWC2 components, to effectively
 demonstrate the capabilities of QWC2.
 
@@ -269,6 +269,8 @@ $ yarn start
 The `yarn start` command actually launches a development server for the application. In production
 context the application would be built, and the build artefacts would be served by a web server such
 as NGINX or Apache. More on that later in the workshop…
+
+The QWC2 web application is now available at http://localhost:8081.
 
 Now is a good time to explore the QWC2 Demo App. Here are examples of things you can try out:
 
@@ -431,7 +433,7 @@ $ yarn run prod
 This command builds the application and stores the results under the `prod` directory. What's
 left to be done is copying the content of the `prod` directory to a web-accessible directory.
 
-In our case we're going to the NGINX we server, which is the web server we already use for
+In our case we're going to use the NGINX server, which is the web server we already use for
 QGIS Server 3. So let's copy the content of the `prod` directory to the NGINX directory:
 
 ```
