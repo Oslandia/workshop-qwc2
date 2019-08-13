@@ -8,6 +8,12 @@
 * eric -DOT- lemoine -AT- oslandia -DOT- com
 * @erilem on Twitter
 
+## Julien Cabieces
+
+* Oslandia
+* julien -DOT- cabieces -AT- oslandia -DOT- com
+* @CabiecesJ on Twitter
+
 ## Agenda
 
 ## Introduction
