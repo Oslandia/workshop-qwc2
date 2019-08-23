@@ -81,6 +81,10 @@ VirtualBox. For that please proceed with the following hands-on exercise.
 
 First, copy the `workshop-qwc2.ova` file to the file system of your local machine.
 
+Note: the file system used on the workshop USB key is exFAT. exFAT should work out-of-the-box on
+Windows and macOS. On Linux you need to install exFAT-specific packages. For example, on
+Debian-based distributions, the packages are `exfat-buse` and `exfat-utils`.
+
 Then you can you can optionally verify that the `workshop-qwc2.ova` file hasn't been
 corrupted by checking its md5 sum. On Linux you can do it like this:
 
