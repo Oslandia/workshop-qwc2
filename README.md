@@ -5,5 +5,3 @@
 Initially held at [FOSS4G Bucharest 2019](https://2019.foss4g.org).
 
 [workshop document](workshop.md)
-
-Éric Lemoine, Oslandia

@@ -2,7 +2,7 @@
 
 ![](img/foss4g-2019-bucharest.jpg)
 
-https://github.com/elemoine/workshop-qwc2/
+https://github.com/Oslandia/workshop-qwc2/
 
 ## Éric Lemoine
 
@@ -79,14 +79,12 @@ VirtualBox. For that please proceed with the following hands-on exercise.
 
 **Hands-on exercise 1: start the VM**
 
-First, copy the `workshop-qwc2.ova` file to the file system of your local machine.
+First of all you need to download the virtual appliance `workshop-qwc2.ova` from Oslandia's
+hekla.oslandia.net server. Go to http://hekla.oslandia.net/workshop-qwc2/, and download the
+`workshop-qwc2.ova` file (5.2 GBytes).
 
-Note: the file system used on the workshop USB key is exFAT. exFAT should work out-of-the-box on
-Windows and macOS. On Linux you need to install exFAT-specific packages. For example, on
-Debian-based distributions, the packages are `exfat-fuse` and `exfat-utils`.
-
-Then you can you can optionally verify that the `workshop-qwc2.ova` file hasn't been
-corrupted by checking its md5 sum. On Linux you can do it like this:
+You can also download the `workshop-qwc2.ova.md5` file and check that the `workshop-qwc2.ova` file
+hasn't been corrupted during download. On Linux you can do the check with the following commande:
 
 ```shell
 $ md5sum -c workshop-qwc2.ova.md5
