@@ -83,8 +83,12 @@ First of all you need to download the virtual appliance `workshop-qwc2.ova` from
 hekla.oslandia.net server. Go to http://hekla.oslandia.net/workshop-qwc2/, and download the
 `workshop-qwc2.ova` file (5.2 GBytes).
 
+Note: please open an issue on https://github.com/Oslandia/workshop-qwc2 if the `workshop-qwc2.ova`
+file is no longer available on the hekla server.
+
 You can also download the `workshop-qwc2.ova.md5` file and check that the `workshop-qwc2.ova` file
-hasn't been corrupted during download. On Linux you can do the check with the following commande:
+hasn't been corrupted during download. On Linux you can use the following command to verify the md5
+sum:
 
 ```shell
 $ md5sum -c workshop-qwc2.ova.md5
